@@ -1,0 +1,26 @@
+{
+  "name": "irohats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "preinstall": "npm install autodts",
+    "postinstall": "autodts link",
+    "prepublish": "tsc && autodts generate",
+    "test": "node test/test.js"
+  },
+  "author": "Yves Peckstadt",
+  "license": "ISC",
+  "dependencies": {
+    "@lib/dependency-example": "0.0.4",
+    "autodts": "0.0.6",
+    "js-sha3": "^0.5.7"
+  },
+  "devDependencies": {
+    "@lib/autodts-generator": "~0.0.1",
+    "typescript": "^2.2.1"
+  },
+  "typescript": {
+    "definition": "index.d.ts"
+  }
+}
