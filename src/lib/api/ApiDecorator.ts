@@ -5,8 +5,9 @@ export class ApiDecorator implements IApi {
 
     private _api: Api;
 
-    constructor(api: Api) {
+    constructor(api: Api, url: string) {
         this._api = api;
+        this._api.url = url;
     }
 
     addUser(): void {

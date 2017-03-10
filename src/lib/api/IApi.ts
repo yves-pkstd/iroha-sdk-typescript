@@ -1,5 +1,5 @@
 export interface IApi {
-    addUser(): void;
+    addUser(alias: string): void;
     removeUser(): void;
     grantUser(): void;
     addAsset(): void;
